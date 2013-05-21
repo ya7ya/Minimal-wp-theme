@@ -1,0 +1,8 @@
+/* Futura-Light webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('Futura-Light.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Light.woff') format('woff'),
+         url('Futura-Light.ttf')  format('truetype'),
+         url('Futura-Light.svg#webfont') format('svg');
+}

@@ -1,0 +1,19 @@
+/*
+Theme Name: Minimal By Yahya
+Theme URI: http://www.MohamedYahya.com/
+Description: A minimal responsive Portfolio
+Author: Yahya 
+Version: 1.1
+Author URI:http://mohamedyahya.com
+License: GNU General Public License version 3.0
+License URI: 
+Tags: Minimal, two-column, flexible-width
+ 
+*/
+
+
+
+@import url("assets/fonts/futura/fonts.css");
+@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css");
+@import url("//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css");
+@import url("assets/css/main.css");

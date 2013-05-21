@@ -1,0 +1,44 @@
+/* Futura-Bold webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url('Futura-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Bold.woff') format('woff'),
+         url('Futura-Bold.ttf')  format('truetype'),
+         url('Futura-Bold.svg#webfont') format('svg');
+}
+
+/* Futura-Book webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('Futura-Book.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Book.woff') format('woff'),
+         url('Futura-Book.ttf')  format('truetype'),
+         url('Futura-Book.svg#webfont') format('svg');
+}
+
+/* Futura-Light-Italic webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Light-Italic';
+    src: url('Futura-Light-Italic.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Light-Italic.woff') format('woff'),
+         url('Futura-Light-Italic.ttf')  format('truetype'),
+         url('Futura-Light-Italic.svg#webfont') format('svg');
+}
+
+/* Futura-Light webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('Futura-Light.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Light.woff') format('woff'),
+         url('Futura-Light.ttf')  format('truetype'),
+         url('Futura-Light.svg#webfont') format('svg');
+}
+
+/* Futura-Medium webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Medium';
+    src: url('Futura-Medium.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Medium.woff') format('woff'),
+         url('Futura-Medium.ttf')  format('truetype'),
+         url('Futura-Medium.svg#webfont') format('svg');
+}
