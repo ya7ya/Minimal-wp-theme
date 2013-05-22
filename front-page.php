@@ -353,11 +353,11 @@
                                 
 
                         <div <?php post_class('skill-block project-block'); ?> id="experience-container-<?php the_ID(); ?>">
-                            <p class="exp-meta-date">09- 10</p>
-                            <p class="exp-meta-cat"><?php $categories = get_the_category(); print_r($categories[0]->name); ?></p>
+                            <p class="exp-meta-date"><?php echo get_post_custom_values('duration')[0]; ?></p>
+                            <p class="exp-meta-cat"><?php $categories = get_the_category(); print_r($categories[1]->name); ?></p>
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <p class="exp-meta-location">Kuala Lumpur, Malaysia</p>
-                            <p class="exp-meta-title">IT Officer</p>
+                            <p class="exp-meta-location"><?php echo get_post_custom_values('location')[0]; ?></p>
+                            <p class="exp-meta-title"><?php echo get_post_custom_values('job_title')[0]; ?></p>
                             <?php the_content(); ?>
                        </div><!-- END of exp-->
                     
@@ -367,25 +367,36 @@
 
                         <?php endif; ?>
 
-                       <div class="skill-block project-block">
-                            <p class="exp-meta-date">09- 10</p>
-                            <p class="exp-meta-cat">Internship</p>
-                            <h3><a href="http://www.consurv.com.my/v2/">Consurv Technic Sdn. Bhd.</a></h3>
-                            <p class="exp-meta-location">Kuala Lumpur, Malaysia</p>
-                            <p class="exp-meta-title">IT Officer</p>
-                            <p><b>RESPONSIBLITIES:</b> Network admin, hardware troubleshooting / maintenance, RFID (Active
-                Radio Frequency Identification Cards) development</p>
-                       </div><!-- END of exp-->
                     
                     <h2> Education</h2>
-                            <div class="skill-block project-block">
-                            <p class="exp-meta-date">08- 13</p>
-                            <p class="exp-meta-cat">Full Time student</p>
-                            <h3><a href="http://www.utp.edu.my/">Universiti Teknologi Petronas</a></h3>
-                            <p class="exp-meta-location">Perak, Malaysia</p>
-                            <p class="exp-meta-title"> Bachelor of Information Technology (ICT)</p>
-                            <p><b>Major:</b> Software Engineering (OOP, AI, software Agents, Machine learning) <b>Minor:</b> Corporate Management </p>
+                        <?php 
+
+                        $args = array(
+                                'category_name' => 'Education',
+                            );
+
+                        $education = new WP_Query($args); 
+                        
+                        #The Loop 
+                        if($education -> have_posts()):
+                            while ($education -> have_posts()): $education ->the_post(); ?>
+                                
+
+                        <div <?php post_class('skill-block project-block'); ?> id="experience-container-<?php the_ID(); ?>">
+                            <p class="exp-meta-date"><?php echo get_post_custom_values('duration')[0]; ?></p>
+                            <p class="exp-meta-cat"><?php $categories = get_the_category(); print_r($categories[1]->name); ?></p>
+                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <p class="exp-meta-location"><?php echo get_post_custom_values('location')[0]; ?></p>
+                            <p class="exp-meta-title"><?php echo get_post_custom_values('job_title')[0]; ?></p>
+                            <?php the_content(); ?>
                        </div><!-- END of exp-->
+                    
+                        <?php endwhile; else : ?>
+
+                        <p>No Education Experience so far. </p>
+
+                        <?php endif; ?>
+
         
                     </div><!-- End of inner container -->
                 </div><!-- End of span9 article-container -->    
