@@ -118,7 +118,6 @@
                         </figure>
 
                         <?php endif; ?>
-                        <!--<img src="http://lorempixel.com/500/200" alt="Ad" />-->
                         <h4><a href="<?php echo get_post_custom_values('client_link')[0]; ?>"><?php echo get_post_custom_values('client')[0]; ?></a></h4>
                         <p class="project-tags"><?php the_tags('<span class="label">Technologies:</span> <code>','</code>, <code> ','</code>'); ?></p>
                         
@@ -126,10 +125,6 @@
 
                        </div><!-- END of project-block -->
                     
-                                       
-
-
-
                 <?php endwhile; ?>
             
             <?php else: ?>
