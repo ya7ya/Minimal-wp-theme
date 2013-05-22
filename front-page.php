@@ -109,7 +109,7 @@
                     
                     
                        <div <?php post_class('span6 project-block') ?> id="project-container-<?php the_ID(); ?>">
-                        <p class="project-meta-cat"><?php $categories = get_the_category(); print_r($categories[0]->name); ?></p>
+                        <p class="project-meta-cat"><?php $categories = get_the_category(); echo $categories[0]->name; ?></p>
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <?php if(has_post_thumbnail()): ?>
 
@@ -118,9 +118,7 @@
                         </figure>
 
                         <?php endif; ?>
-                        <h4><a href="<?php echo get_post_custom_values('client_link')[0]; ?>"><?php echo get_post_custom_values('client')[0]; ?></a></h4>
-                        <p class="project-tags"><?php the_tags('<span class="label">Technologies:</span> <code>','</code>, <code> ','</code>'); ?></p>
-                        
+                    
                         <?php the_excerpt(); ?>
 
                        </div><!-- END of project-block -->
@@ -257,11 +255,11 @@
                                 
 
                         <div <?php post_class('skill-block project-block'); ?> id="experience-container-<?php the_ID(); ?>">
-                            <p class="exp-meta-date"><?php echo get_post_custom_values('duration')[0]; ?></p>
-                            <p class="exp-meta-cat"><?php $categories = get_the_category(); print_r($categories[1]->name); ?></p>
+                            <p class="exp-meta-date"><?php $duration = get_post_custom_values('duration'); echo $duration[0]; ?></p>
+                            <p class="exp-meta-cat"><?php $categories = get_the_category(); echo $categories[1]->name ; ?></p>
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <p class="exp-meta-location"><?php echo get_post_custom_values('location')[0]; ?></p>
-                            <p class="exp-meta-title"><?php echo get_post_custom_values('job_title')[0]; ?></p>
+                            <p class="exp-meta-location"><?php $location = get_post_custom_values('location'); echo $location[0]; ?></p>
+                            <p class="exp-meta-title"><?php $job_title = get_post_custom_values('job_title'); echo $job_title[0]; ?></p>
                             <?php the_content(); ?>
                        </div><!-- END of exp-->
                     
@@ -287,11 +285,11 @@
                                 
 
                         <div <?php post_class('skill-block project-block'); ?> id="experience-container-<?php the_ID(); ?>">
-                            <p class="exp-meta-date"><?php echo get_post_custom_values('duration')[0]; ?></p>
-                            <p class="exp-meta-cat"><?php $categories = get_the_category(); print_r($categories[1]->name); ?></p>
+                            <p class="exp-meta-date"><?php $duration = get_post_custom_values('duration'); echo $duration[0]; ?></p>
+                            <p class="exp-meta-cat"><?php $categories = get_the_category(); echo $categories[1]->name ; ?></p>
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <p class="exp-meta-location"><?php echo get_post_custom_values('location')[0]; ?></p>
-                            <p class="exp-meta-title"><?php echo get_post_custom_values('job_title')[0]; ?></p>
+                            <p class="exp-meta-location"><?php $location = get_post_custom_values('location'); echo $location[0]; ?></p>
+                            <p class="exp-meta-title"><?php $job_title = get_post_custom_values('job_title'); echo $job_title[0]; ?></p>
                             <?php the_content(); ?>
                        </div><!-- END of exp-->
                     
