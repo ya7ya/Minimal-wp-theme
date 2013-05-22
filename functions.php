@@ -26,7 +26,8 @@ Menus
 function register_my_menus(){
 	register_nav_menus(array(
 		#'top-menu'	=> 'Top Menu',
-		'main-menu' => 'Main Menu'
+		'main-menu' => 'Main Menu',
+		'front-menu'=> 'Front Page Menu'
 	));
 }
 
