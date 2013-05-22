@@ -29,9 +29,9 @@
 
             <div class="container">
                 <nav class = "top-menu-navigation navbar">
-                    <?php wp_nav_menu(array(
+                    <?php /* wp_nav_menu(array(
                         'theme_location' => 'top-menu'
-                    )); ?>
+                    ));*/ ?>
                 </nav>
 
             </div> <!-- end of container-->

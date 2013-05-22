@@ -25,7 +25,7 @@ Menus
 ********************************************/
 function register_my_menus(){
 	register_nav_menus(array(
-		'top-menu'	=> 'Top Menu',
+		#'top-menu'	=> 'Top Menu',
 		'main-menu' => 'Main Menu'
 	));
 }

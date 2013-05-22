@@ -20,12 +20,16 @@
                 	<article class="clearfix">
                         
                      	<header>    
-							<h1> 404 </h1>
-							<h2> This is not the page You are looking for..</h2>
-
+							<h1><a href="<?php home_url(); ?>"> 404 </a></h1>
+                            <br />
                         </header>
+                            <h2> This is not the page You are looking for..</h2>
+                        <figure class="article-preview-image">
+                            <a href="<?php home_url(); ?>"><img src="http://a1.s6img.com/cdn/box_001/post_11/258030_3493776_i.jpg" alt="yoda" /></a>
+                        </figure>
 
-						<img src=" " alt="yoda" />	                                                    
+							
+							                                                    
                         <hr class="image-replacement">
                         
 
