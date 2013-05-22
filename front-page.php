@@ -80,103 +80,12 @@
 <?php get_header(); ?>
     <!-- MAIN CONTENT -->
     <section id="about" class="section-block first-block">
-        <h1 class="section-title">I'm Yahya <small> Software Engineer / Web Developer</small> </h1>
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <p>I'm a Freelance Software Engineer specialized in web development, Based in Cairo, Egypt. I like to work with clients to build web Applications using clean, reusable code. </p>
-                </div>
-                <div class="span12">
-                    <h3>What I do?</h3>
-                    <ul class="check-list">
-                        <li>Web design from concept to completion</li>
-                        <li>Web Development:
-                            <ul>
-                                <li>Wordpress powered websites</li>
-                                <li>Ruby on Rails/ Django Web applications</li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="span12">
-                <hr />
-                <h2>Technologies I Use</h2>
-                </div>
-                <div class="span4">
-                    
-                    <h3>Front-end</h3>    
-                            <div class="skill">
-                            <h6 class="name">HTML</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 85%"></div>
-                            </div></div>
-                            <div class="skill">
-                            <h6 class="name">CSS3 (SASS)</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 75%"></div>
-                            </div></div>
-                            <div class="skill">
-                            <h6 class="name">Javascript (jQuery)</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 65%"></div>
-                            </div></div>
-                        </div> <!-- End of Frontend -->
+        <!-- Grabbing the content of the About page -->
+        <?php $about = get_page_by_title('About'); 
 
-                    <div class="span4">
-                    <h3>Back-end</h3>    
-                            <div class="skill">
-                            <h6 class="name">PHP</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 75%"></div>
-                            </div></div>
-                            <div class="skill">
-                            <h6 class="name">Python (Django)</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 65%"></div>
-                            </div></div>
-                            <div class="skill">
-                            <h6 class="name">Ruby (Ruby On Rails)</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 55%"></div>
-                            </div></div>
-                    </div><!-- End of Backend-->
+            echo $about->post_content;?>
 
-                    <div class="span4">
-                    <h3>Software & Tools:</h3> 
-                        <div class="skill-block">
-                        <h5>Adobe CS6</h5>
-                        <div class="skill">
-                            <h6 class="name">Photoshop</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 65%"></div>
-                            </div></div>
-                        <div class="skill">
-                            <h6 class="name">Fireworks</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 75%"></div>
-                            </div></div>
-
-                        <h5>IDE / Editors</h5>
-                        <div class="skill">
-                            <h6 class="name">Eclipse</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 75%"></div>
-                            </div></div>
-                        <div class="skill">
-                            <h6 class="name">Sublime Text 2</h6>
-                            <div class="progress progress-success progress-striped">
-                                <div class="bar" style="width: 65%"></div>
-                            </div></div>
-                    </div><!-- End of Backend-->
-                </div>
-                        
-            </div><!-- End of Technology Row-->
-
-        </div>
     </section><!-- End of About Section -->
 <!-- =================================================================
     ================================================================-->
