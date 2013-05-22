@@ -118,7 +118,9 @@
                         </figure>
 
                         <?php endif; ?>
-                    
+                        <h4><a href="<?php $link = get_post_custom_values('client_link');echo $link[0]; ?>"><?php $client = get_post_custom_values('client'); echo $client[0]; ?></a></h4>
+                        <p class="project-tags"><?php the_tags('<span class="label">Technologies:</span> <code>','</code>, <code> ','</code>'); ?></p>
+                        
                         <?php the_excerpt(); ?>
 
                        </div><!-- END of project-block -->
