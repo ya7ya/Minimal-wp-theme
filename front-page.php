@@ -1,7 +1,7 @@
 <?php 
     function isemail($email) {
     return preg_match('|^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]{2,})+$|i', $email);
-}
+    }
 
     $error_name= false;
     $error_email=false;
