@@ -51,6 +51,8 @@
             <nav id="main-nav" class="main-navigation navbar clearfix">
                 <ul id="menu-static" class="menu">
                 <a id="nav-brand" href="#logo"><img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.png" class="img-circle logo-icon brand" alt="<?php bloginfo('name'); ?>" /></a>
+                  
+                <!-- Displaying the suitable menu whether It's front page menu or normal blog menu -->
                   <?php 
                         if (is_front_page()){
                             wp_nav_menu(array(
