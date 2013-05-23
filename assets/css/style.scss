@@ -58,6 +58,7 @@ $text-color: #666666;
 $heading-font: "Futura-Book", Arial, sans-serif;
 $serif-font: 'Open Sans', Georgia, serif;
 $body-font: 'Futura-Light',Futura-Medium Futura-Book, Futura-Bold , Arial, sans-serif;
+$icon-font: 'icomoon';
 $gray-color: #F1F1F1;
 
 
@@ -73,6 +74,7 @@ ul, ol, li {
 	list-style-type: none;
 }
 
+
 /*=========Typography================*/
 
 body{
@@ -85,7 +87,6 @@ body{
 		color: $link-color;
 		&:hover{
 			color: darken($text-color, 25%);
-			font-weight: bold;
 		}
 	}
 }
@@ -502,17 +503,22 @@ footer{
 		}
 		
 		.article-meta-comments {
-			float: right;
-			background: transparent url('../img/comments-base-out.png') center center no-repeat;
-			width: 42px;
-			height: 46px;
-			color: white;
+			font-size: 1em;
+			color: #fff;
 			text-align: center;
-			padding-top: 11px;
-			margin-top: 42px;
+			line-height: 42px;
+			float: right;
+			width: 42px;
+			height: 42px;
+			background: darken($gray-color,75%) ;
+			-moz-border-radius: 21px;
+			-webkit-border-radius:21px;
+			border-radius: 21px;
 			
 			&:hover {
-				background: transparent url('../img/comments-base-over.png') center center no-repeat;
+				@include transition ($duration: 0.2s, $ease: ease-in);
+				background: $gray-color;
+				color: #000;
 			}
 		}
 		
@@ -535,11 +541,18 @@ footer{
 	}
 	
 	.post-format-quote {
+		font-family: $icon-font;
+		font-size: 1.4em;
+		color: white;
+		text-align: center;
+		line-height: 42px;
 		float: right;
 		width: 42px;
 		height: 42px;
-		background: transparent url('../img/quote-format-icon.png') center center no-repeat;
-		margin-top: 15px;
+		background: darken($gray-color,75%) ;
+		-moz-border-radius: 21px;
+		-webkit-border-radius:21px;
+		border-radius: 21px;
 	}
 	
 	.quote-container {
@@ -564,11 +577,18 @@ footer{
 	}
 
 	.post-format-url {
+		font-family: $icon-font;
+		font-size: 1.4em;
+		color: white;
+		text-align: center;
+		line-height: 42px;
 		float: right;
 		width: 42px;
 		height: 42px;
-		background: transparent url('../img/url-format-icon.png') center center no-repeat;
-		margin-top: 15px;
+		background: darken($gray-color,75%) ;
+		-moz-border-radius: 21px;
+		-webkit-border-radius:21px;
+		border-radius: 21px;
 	}
 	
 	.url-container {

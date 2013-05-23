@@ -7,7 +7,7 @@
 <article <?php post_class('clearfix'); ?> id="post-<?php the_ID(); ?>">
                         <header>    
 							
-							<span class="post-format-quote"></span>
+							<span class="post-format-quote" aria-hidden="true" data-icon="&#xe026;"></span>
 
                             <p class="article-meta-categories"><?php the_category('&nbsp;/&nbsp;'); ?></p>                         
                             <p class="article-meta-extra"><?php the_date(get_option('date_format'));print(' at '); the_time(get_option('time_format')); ?>, by <?php the_author_posts_link(); ?></p>

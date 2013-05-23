@@ -21,8 +21,7 @@ body {
   body a {
     color: #369400; }
     body a:hover {
-      color: #262626;
-      font-weight: bold; }
+      color: #262626; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
@@ -303,16 +302,24 @@ footer {
       height: 42px;
       line-height: 42px; }
     .articles article .article-meta-comments {
-      float: right;
-      background: transparent url("../img/comments-base-out.png") center center no-repeat;
-      width: 42px;
-      height: 46px;
-      color: white;
+      font-size: 1em;
+      color: #fff;
       text-align: center;
-      padding-top: 11px;
-      margin-top: 42px; }
+      line-height: 42px;
+      float: right;
+      width: 42px;
+      height: 42px;
+      background: #323232;
+      -moz-border-radius: 21px;
+      -webkit-border-radius: 21px;
+      border-radius: 21px; }
       .articles article .article-meta-comments:hover {
-        background: transparent url("../img/comments-base-over.png") center center no-repeat; }
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        background: #f1f1f1;
+        color: #000; }
     .articles article .article-preview-image {
       float: left;
       margin-right: 2em;
@@ -326,11 +333,18 @@ footer {
         -webkit-box-shadow: 0px 0px 5px #d7d7d7;
         box-shadow: 0px 0px 5px #d7d7d7; }
   .articles .post-format-quote {
+    font-family: "icomoon";
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    line-height: 42px;
     float: right;
     width: 42px;
     height: 42px;
-    background: transparent url("../img/quote-format-icon.png") center center no-repeat;
-    margin-top: 15px; }
+    background: #323232;
+    -moz-border-radius: 21px;
+    -webkit-border-radius: 21px;
+    border-radius: 21px; }
   .articles .quote-container {
     background: #fafafa;
     border: 1px solid #d7d7d7;
@@ -348,11 +362,18 @@ footer {
       margin-top: 1.5em;
       display: block; }
   .articles .post-format-url {
+    font-family: "icomoon";
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    line-height: 42px;
     float: right;
     width: 42px;
     height: 42px;
-    background: transparent url("../img/url-format-icon.png") center center no-repeat;
-    margin-top: 15px; }
+    background: #323232;
+    -moz-border-radius: 21px;
+    -webkit-border-radius: 21px;
+    border-radius: 21px; }
   .articles .url-container {
     background: #fafafa;
     border: 1px solid #d7d7d7;
