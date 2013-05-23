@@ -14,7 +14,13 @@
 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 
+        <link rel="apple-touch-icon" href="<?php echo IMAGES.'/';?>apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo IMAGES.'/';?>apple-touch-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo IMAGES.'/';?>apple-touch-icon-114x114-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo IMAGES.'/';?>apple-touch-icon-144x144-precomposed.png" />
         
+        <link rel="icon" href="<?php echo IMAGES.'/';?>favicon.ico" type="image/x-icon" />
+
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
