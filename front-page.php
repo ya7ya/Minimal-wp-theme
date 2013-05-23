@@ -259,6 +259,13 @@
                         <div <?php post_class('skill-block project-block'); ?> id="experience-container-<?php the_ID(); ?>">
                             <p class="exp-meta-date"><?php $duration = get_post_custom_values('duration'); echo $duration[0]; ?></p>
                             <p class="exp-meta-cat"><?php $categories = get_the_category(); echo $categories[1]->name ; ?></p>
+                            <?php if(has_post_thumbnail()): ?>
+
+                            <figure class="article-preview-image">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                            </figure>
+
+                            <?php endif; ?>                            
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <p class="exp-meta-location"><?php $location = get_post_custom_values('location'); echo $location[0]; ?></p>
                             <p class="exp-meta-title"><?php $job_title = get_post_custom_values('job_title'); echo $job_title[0]; ?></p>
